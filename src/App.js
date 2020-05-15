@@ -12,6 +12,11 @@ function App() {
             <input name="text" type="text" />
             <button>search for your cocktail</button>
           </div>
+
+          <div id="header2">
+            <h3>Today's Top 5!</h3>
+          </div>
+          
     </div>
   );
 }
