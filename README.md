@@ -1,9 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# module3-project-Jiaxi,Angela,Daquan 
+
+## problem statement
+An app that acts as a source for all the top cocktail recipes. True cocktail enthusiast or those just entertaining guest will enjoy the opportunity of being able to find what they want to know about the cocktail making process in one place.
+
+## target users
+The target users are people who want to stay sharp on their cocktail making knowledge, as well as those who want to have drink ideas at the ready for personal events.
 
 ## wire frame
 
 ![alt text](https://github.com/DaquanJ/the-bar/blob/master/wireframe/cocktail-app-wire-frame.png "Cocktail recipe app")
 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
