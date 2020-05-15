@@ -1,15 +1,20 @@
 import React from 'react';
-
 import './App.css';
+//import axios from 'axios';
+import Header from './components/Header'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-
-      </header>
+      <Header />
+     <div id="searchbar">
+            <input name="text" type="text" />
+            <button>search for your cocktail</button>
+          </div>
     </div>
   );
 }
+
 
 export default App;
