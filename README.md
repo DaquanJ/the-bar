@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## wire frame
+
+![alt text](https://github.com/DaquanJ/the-bar/blob/master/wireframe/cocktail-app-wire-frame.png "Cocktail recipe app")
+
+
 ## Available Scripts
 
 In the project directory, you can run:
