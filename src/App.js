@@ -15,8 +15,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Drinks />
         <Switch>
+          <Route path="/" exact component={Drinks} />
           <Route path="/11007" component={Margarita} />
           <Route path="/11118" component={BlueMargarita} />
           <Route path="/17216" component={TommyMargarita} />
