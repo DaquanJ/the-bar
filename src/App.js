@@ -1,15 +1,18 @@
-import React from 'react';
-import Wine from './components/Wine'
-import './App.css';
+import React from "react";
+import Wine from "./components/Margarita";
+import { BrowserRouter as Router, Switch, /* Route */ } from "react-router-dom";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-      </header>
-      <Wine />
-    </div>
+    <Router>
+      <div className="App">
+        <Wine />
+        <Switch>
+          
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
