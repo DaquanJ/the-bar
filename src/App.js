@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Wine from './components/Wine'
 import './App.css';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
 
       </header>
+      <Wine />
     </div>
   );
 }
