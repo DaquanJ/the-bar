@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class Margarita extends Component {
+class CloveCocktail extends Component {
   constructor(props) {
     super(props);
 
@@ -18,20 +18,19 @@ class Margarita extends Component {
 
   componentDidMount() {
     axios
-      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
+      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=cocktail")
       .then((res) => {
-        const margarita = res.data.drinks;
+        const cocktails = res.data.drinks;
 
         this.setState({
-          data: margarita,
-          id: margarita[0].idDrink,
-          picture: margarita[0].strDrinkThumb,
-          name: margarita[0].strDrink,
-          directions: margarita[0].strInstructions,
-          ingredients1: margarita[0].strIngredient1,
-          ingredients2: margarita[0].strIngredient2,
-          ingredients3: margarita[0].strIngredient3,
-          ingredients4: margarita[0].strIngredient4,
+          data: cocktails,
+          id: cocktails[3].idDrink,
+          picture: cocktails[3].strDrinkThumb,
+          name: cocktails[3].strDrink,
+          directions: cocktails[3].strInstructions,
+          ingredients1: cocktails[3].strIngredient1,
+          ingredients2: cocktails[3].strIngredient2,
+          ingredients3: cocktails[3].strIngredient3,
         });
       })
 
@@ -49,10 +48,9 @@ class Margarita extends Component {
         <h3>Ingredients: {this.state.ingredients1}</h3>
         <h3>Ingredients: {this.state.ingredients2}</h3>
         <h3>Ingredients: {this.state.ingredients3}</h3>
-        <h3>Ingredients: {this.state.ingredients4}</h3>
       </div>
     );
   }
 }
 
-export default Margarita;
+export default CloveCocktail;

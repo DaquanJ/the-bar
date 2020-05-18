@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 
-class Margarita extends Component {
+class WhiteMargarita extends Component {
   constructor(props) {
     super(props);
 
@@ -24,14 +24,14 @@ class Margarita extends Component {
 
         this.setState({
           data: margarita,
-          id: margarita[0].idDrink,
-          picture: margarita[0].strDrinkThumb,
-          name: margarita[0].strDrink,
-          directions: margarita[0].strInstructions,
-          ingredients1: margarita[0].strIngredient1,
-          ingredients2: margarita[0].strIngredient2,
-          ingredients3: margarita[0].strIngredient3,
-          ingredients4: margarita[0].strIngredient4,
+          id: margarita[3].idDrink,
+          picture: margarita[3].strDrinkThumb,
+          name: margarita[3].strDrink,
+          directions: margarita[3].strInstructions,
+          ingredients1: margarita[3].strIngredient1,
+          ingredients2: margarita[3].strIngredient2,
+          ingredients3: margarita[3].strIngredient3,
+          ingredients4: margarita[3].strIngredient4,
         });
       })
 
@@ -43,7 +43,7 @@ class Margarita extends Component {
   render() {
     return (
       <div>
-        <img src={this.state.picture} alt="" width="300px"></img>
+        <img src={this.state.picture} alt="" width="300px" ></img>
         <h3>Name: {this.state.name}</h3>
         <h3>Directions: {this.state.directions}</h3>
         <h3>Ingredients: {this.state.ingredients1}</h3>
@@ -55,4 +55,4 @@ class Margarita extends Component {
   }
 }
 
-export default Margarita;
+export default WhiteMargarita;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-class Cocktails extends Component {
+class Margaritas extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -14,16 +14,16 @@ class Cocktails extends Component {
 
   componentDidMount() {
     axios
-      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=cocktail")
+      .get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita")
       .then((res) => {
-        const cocktails = res.data.drinks;
+        const margaritas = res.data.drinks;
 
         this.setState({
-          data: cocktails,
-          picture: cocktails[0].strDrinkThumb,
-          picture1: cocktails[1].strDrinkThumb,
-          picture2: cocktails[2].strDrinkThumb,
-          picture3: cocktails[3].strDrinkThumb,
+          data: margaritas,
+          picture: margaritas[0].strDrinkThumb,
+          picture1: margaritas[1].strDrinkThumb,
+          picture2: margaritas[2].strDrinkThumb,
+          picture3: margaritas[3].strDrinkThumb,
         });
 
         console.log(res.data.drinks);
@@ -38,16 +38,16 @@ class Cocktails extends Component {
     return (
       <div>
         <ul className="list-styling"></ul>
-        <Link to="/12418">
+        <Link to="/11007">
           <img src={this.state.picture} alt="margarita" width="250px"></img>
         </Link>
-        <Link to="/17834">
+        <Link to="/11118">
           <img src={this.state.picture1} alt="margarita1" width="250px"></img>
         </Link>
-        <Link to="/11019">
+        <Link to="/17216">
           <img src={this.state.picture2} alt="margarita" width="250px"></img>
         </Link>
-        <Link to="/11255">
+        <Link to="/16158">
           <img src={this.state.picture3} alt="margarita" width="250px"></img>
         </Link>{" "}
         <br></br>
@@ -56,4 +56,4 @@ class Cocktails extends Component {
   }
 }
 
-export default Cocktails;
+export default Margaritas;
