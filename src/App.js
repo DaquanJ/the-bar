@@ -1,4 +1,5 @@
 import React from 'react';
+//import {SearchBar} from 'react-native-elements';
 import './App.css';
 //import axios from 'axios';
 import Header from './components/Header'
@@ -16,7 +17,7 @@ function App() {
           <div id="header2">
             <h3>Today's Top 5!</h3>
           </div>
-          
+
     </div>
   );
 }
