@@ -48,7 +48,7 @@ class Post extends Component {
    
         return ( 
             <div className="post">
-                <h1> I am the posting feature! </h1>
+                <h1> Add your Drinks! </h1>
                 <form onSubmit = {e => e.preventDefault()} >
                     <h3>Name</h3>
                     <input type="text" onChange={ e => {this.setState({name: e.target.value})} }  className="post"/>
