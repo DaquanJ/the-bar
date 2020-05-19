@@ -7,6 +7,7 @@ export default class App extends React.Component {
 
   updateSearch = search => {
     this.setState({ search });
+    console.log(this.state.search)
   };
 
   render() {
