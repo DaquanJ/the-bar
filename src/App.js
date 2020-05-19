@@ -9,6 +9,7 @@ import TurfCocktails from "./components/TurfCocktails";
 import AbbeyCocktail from "./components/AbbeyCocktail";
 import AlfieCocktail from "./components/AlfieCocktail";
 import CloveCocktail from "./components/CloveCocktail";
+import Post from './components/Post';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
@@ -48,6 +49,7 @@ class App extends Component {
             <Route path="/11019" component={AlfieCocktail} />
             <Route path="/11255" component={CloveCocktail} />
           </Switch>
+          <Post/>
         </div>
       </Router>
     );
