@@ -19,7 +19,7 @@ function App() {
         <Header />
         <div id="searchbar">
           <input name="text" type="text" />
-          <button>search for your cocktail</button>
+          <button className="button">search for your cocktail</button>
         </div>
 
         <div id="header2">
