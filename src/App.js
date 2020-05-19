@@ -4,6 +4,9 @@ import './App.css';
 //import axios from 'axios';
 import Header from './components/Header'
 
+const { API_KEY } = process.env
+const API_URL = 'http://api.musicgraph.com/api/v2/artist/suggest'
+
 
 function App() {
   return (
@@ -15,7 +18,7 @@ function App() {
           </div>
 
           <div id="header2">
-            <h3>Today's Top 5!</h3>
+            <h3>Today's Top Drinks!</h3>
           </div>
 
     </div>
