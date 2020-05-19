@@ -51,13 +51,13 @@ class Post extends Component {
                 <h1> I am the posting feature! </h1>
                 <form onSubmit = {e => e.preventDefault()} >
                     <h3>Name</h3>
-                    <input type="text" onChange={ e => {this.setState({name: e.target.value})} } />
+                    <input type="text" onChange={ e => {this.setState({name: e.target.value})} }  className="post"/>
                     <h3>ingredients</h3>
-                    <input type="text" onChange={ e => {this.setState({ingredients: e.target.value})} } />
-                    <input type="text" onChange={ e => {this.setState({ingredients1: e.target.value})} }/>
-                    <input type="text" onChange={ e => {this.setState({ingredients2: e.target.value})} }/>
-                    <input type="submit" value='add your cocktail' onClick = {this.newCocktails} />
-                    <button onClick={this.deleteCocktails} > delete Cocktail </button>
+                    <input type="text" onChange={ e => {this.setState({ingredients: e.target.value})} }  className="post"/>
+                    <input type="text" onChange={ e => {this.setState({ingredients1: e.target.value})} } className="post"/>
+                    <input type="text" onChange={ e => {this.setState({ingredients2: e.target.value})} } className="post"/>
+                    <input type="submit" value='add your cocktail' onClick = {this.newCocktails} className="post"/>
+                    <button onClick={this.deleteCocktails} className="post"> delete Cocktail </button>
                 </form>
                 <ul id='1' style={{display: 'none'}} >
                     <li id = 'name'></li>
