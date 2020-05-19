@@ -47,7 +47,7 @@ class Post extends Component {
     render() { 
    
         return ( 
-            <div>
+            <div className="post">
                 <h1> I am the posting feature! </h1>
                 <form onSubmit = {e => e.preventDefault()} >
                     <h3>Name</h3>
