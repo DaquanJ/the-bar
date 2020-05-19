@@ -1,3 +1,4 @@
+import Header from "./components/Header";
 import React from "react";
 import Drinks from "./components/Drinks";
 import BlueMargarita from "./components/BlueMargarita";
@@ -15,6 +16,15 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Header />
+        <div id="searchbar">
+          <input name="text" type="text" />
+          <button>search for your cocktail</button>
+        </div>
+
+        <div id="header2">
+          <h3>Today's Top 5!</h3>
+        </div>
         <Switch>
           <Route path="/" exact component={Drinks} />
           <Route path="/11007" component={Margarita} />
