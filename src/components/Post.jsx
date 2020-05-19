@@ -6,41 +6,65 @@ class Post extends Component {
         super(props);
         this.state = { 
             userRecipes: [
-                {name: ''},
-                {images: []}, 
-                {ingredients: ''}
-            ],
-            cocktails: false
+                {id: 1 },
+                {name: []},
+                {ingredients: ''},
+                {ingredients1: ''},
+                {ingredients2: ''}
+            ]
          }
     }
 
+    newCocktails = () => {
+        document.getElementById('name').innerHTML = this.state.name;
+        document.getElementById('ingredient').innerHTML = this.state.ingredients;
+        document.getElementById('ingredient1').innerHTML = this.state.ingredients1;
+        document.getElementById('ingredient2').innerHTML = this.state.ingredients2;
+        document.getElementById('1').style.display = 'block';
+        this.setState({id: this.state.userRecipes.length + 1})
+        console.log(this.state);
+    }
+
+    // onDeleteHandle = () => {
+    //     let id = arguments[0];
+    // }
+
+    // deleteCocktails = (id) => {
+    //    const deletedCocktails = this.state.userRecipes.filter(item => item.id !== id);
+    //     this.setState({userRecipes: deletedCocktails});
+    //     console.log(this.state)
+    // }
+
+    deleteCocktails = () => {
+        let myObject = document.getElementById('1');
+        myObject.remove();
+    }
+
+    // handleIngredients = (e) => {
+    //     this.setState({ingredients: e.target.value})
+    // }
     
     render() { 
-        const cocktailCreator = () => {
-            if (this.state.cocktails === false) {
-                return null;
-            }
-            return (
-                this.state.userRecipes.map(cocktail => ( 
-                    <div>
-                        <h3> {cocktail.name} </h3>
-                        <img src={cocktail.images} alt="images"/>
-                        <p> {cocktail.ingredients} </p>
-                    </div>
-                    ))
-                    )
-        }
+   
         return ( 
             <div>
                 <h1> I am the posting feature! </h1>
                 <form onSubmit = {e => e.preventDefault()} >
                     <h3>Name</h3>
                     <input type="text" onChange={ e => {this.setState({name: e.target.value})} } />
-                    <input type="image" alt=''/>
                     <h3>ingredients</h3>
-                    <input type="submit" value='+' onClick = {() => this.setState({cocktails: true})} />
+                    <input type="text" onChange={ e => {this.setState({ingredients: e.target.value})} } />
+                    <input type="text" onChange={ e => {this.setState({ingredients1: e.target.value})} }/>
+                    <input type="text" onChange={ e => {this.setState({ingredients2: e.target.value})} }/>
+                    <input type="submit" value='add your cocktail' onClick = {this.newCocktails} />
+                    <button onClick={this.deleteCocktails} > delete Cocktail </button>
                 </form>
-                {cocktailCreator()}
+                <ul id='1' style={{display: 'none'}} >
+                    <li id = 'name'></li>
+                    <li id = 'ingredient'></li>
+                    <li id = 'ingredient1'></li>
+                    <li id = 'ingredient2'></li>
+                </ul>
             </div>
          );
     }
