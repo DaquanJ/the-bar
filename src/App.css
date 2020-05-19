@@ -1,22 +1,21 @@
 .App {
-    text-align: center;
-    background-image: url("");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: repeat;
-  
-  }
+  text-align: center;
+  background-image: url("https://www.calacademy.org/sites/default/files/styles/manual_crop_standard_960x540/public/200220_noisepop_1200x900.jpg?itok=RM4i2ZiC&c=c93c8a0ea622b1ae412657dcb0dcb11b");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1 {
-    font-style: italic;
-  }
-  
+  font-style: italic;
+}
+
 #header {
-    margin-top: -30px;
-    background-image: url("");
-    background-color: cornflowerblue;
-    background-attachment: fixed;
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-    color:black;
-  }
+  margin-top: -30px;
+  background-image: url("");
+  background-color: cornflowerblue;
+  background-attachment: fixed;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  color: black;
+}
