@@ -52,7 +52,7 @@ class Post extends Component {
                 <form onSubmit = {e => e.preventDefault()} >
                     <h3>Name</h3>
                     <input type="text" onChange={ e => {this.setState({name: e.target.value})} }  className="post"/>
-                    <h3>ingredients</h3>
+                    <h3>Ingredients</h3>
                     <input type="text" onChange={ e => {this.setState({ingredients: e.target.value})} }  className="post"/>
                     <input type="text" onChange={ e => {this.setState({ingredients1: e.target.value})} } className="post"/>
                     <input type="text" onChange={ e => {this.setState({ingredients2: e.target.value})} } className="post"/>
