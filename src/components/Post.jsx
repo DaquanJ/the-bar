@@ -34,7 +34,15 @@ class Post extends Component {
     //     this.setState({userRecipes: deletedCocktails});
     //     console.log(this.state)
     // }
-
+    updateCocktails = () => {
+        document.getElementById('name').innerHTML = this.state.name;
+        document.getElementById('ingredient').innerHTML = this.state.ingredients;
+        document.getElementById('ingredient1').innerHTML = this.state.ingredients1;
+        document.getElementById('ingredient2').innerHTML = this.state.ingredients2;
+        document.getElementById('1').style.display = 'block';
+        this.setState({id: this.state.userRecipes.length})
+        console.log(this.state);
+    }
     deleteCocktails = () => {
         let myObject = document.getElementById('1');
         myObject.remove();
@@ -57,6 +65,7 @@ class Post extends Component {
                     <input type="text" onChange={ e => {this.setState({ingredients1: e.target.value})} } className="post"/>
                     <input type="text" onChange={ e => {this.setState({ingredients2: e.target.value})} } className="post"/>
                     <input type="submit" value='add your cocktail' onClick = {this.newCocktails} className="post"/>
+                    <button onClick={this.updateCocktails} className="post"> update Cocktail </button>
                     <button onClick={this.deleteCocktails} className="post"> delete Cocktail </button>
                 </form>
                 <ul id='1' style={{display: 'none'}} >
