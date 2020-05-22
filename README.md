@@ -1,5 +1,8 @@
 # module3-project-Jiaxi,Angela,Daquan 
 
+## application url
+https://my-cocktail-maker.herokuapp.com/
+
 ## problem statement
 An app that acts as a source for all the top cocktail recipes. True cocktail enthusiast or those just entertaining guest will enjoy the opportunity of being able to find what they want to know about the cocktail making process in one place.
 
